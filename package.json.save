@@ -1,0 +1,16 @@
+{
+  "name": "smite_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Erro
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "github:types/express",
+    "express": "^4.17.1",
+    "typescript": "^3.9.7"
+  }
+}
