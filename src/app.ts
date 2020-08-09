@@ -1,30 +1,29 @@
 const Discord = require("discord.js");
+import * as fs from "fs";
+import { bot_key, prefix } from "../keys.json";
+
 const client = new Discord.Client();
-const { bot_key, prefix } = require("../keys.json");
-const { guardians, warriors, adc, mage, jungle } = require("../gods.json")
+client.commands = new Discord.Collection();
+const commandFiles = fs.readdirSync('./compile/commands').filter(file => file.endsWith('.js'));
+
+for (let file of commandFiles) {
+    let command = require(`../commands/${file}`);
+    client.commands.set(command.name, command);
+}
 
 client.once('ready', () => {
     console.log("Bot is running");
 });
 
 client.on('message', message => {
-    if(message.author.username !== 'Smite bot') {
-        if(message.content === prefix + 'Es giuli puto?')
-            message.channel.send("Si.");
-        else if(message.content === "dou")
-            message.channel.send("dou");
-        else if(message.content.toLowerCase() === "warchi que juego?") {
-            let gods = [guardians, warriors, adc, mage, jungle];
-            let type_index = Math.round(Math.random() * 4);
-            let god_index = Math.round(Math.random() * (gods[type_index].length - 1));
-            let god = gods[type_index][god_index];
+    if(!message.content.startsWith(prefix) || message.author.bot) return;
 
-            message.channel.send(god);
-        } else if(message.content.toLowerCase() === "warchi colgate")
-            message.channel.send("Colgate vos idiota");
-        else if(message.content.toLowerCase() === "bulome")
-            message.channel.send("Prostagma");
-    } 
+    let command, args;
+
+    [command, ...args] = message.content.slice(prefix.length).toLowerCase().trim().split(" ");
+
+    if(command === "warchi que juego" || command === "rgod")
+        client.commands.get("randomGod").execute(message, args);
 });
 
 

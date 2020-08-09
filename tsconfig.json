@@ -1,9 +1,10 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
+		"module": "CommonJS",
 		"target": "es6",
 		"moduleResolution": "node",
-		"outDir": "compile"
+		"outDir": "compile",
+		"resolveJsonModule": true
 	},
 	"lib": ["es2015"]
 }
