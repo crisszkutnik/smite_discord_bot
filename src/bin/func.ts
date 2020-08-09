@@ -1,6 +1,6 @@
-import { allGods, byCategory } from './../gods.json';;
+import { allGods, byCategory } from './../gods.json';
 
-const parseGodType = (type) => {
+const parseGodType = (type:string) => {
     if(["jungle", "guardian", "warrior", "adc", "mage"].includes(type))
         return type;
     else if(["supp", "support", "sup"].includes(type))
@@ -13,22 +13,40 @@ const parseGodType = (type) => {
         return "warrior";
     else if(["hunter", "cazador", "carry"].includes(type))
         return "adc";
+    else
+        return undefined
 }
 
-const selectRandomGod = (type) => {
+const parseArgument = (arg:string, type:string) => {
+    if(["penetration", "pen", "lifesteal", "power"].includes(arg)) {
+        if(type === 'mage' || type === "guardian")
+            return "magical_" + arg;
+        else
+            return "phyisical_" + arg;
+    }
+}
+
+const obtainGodClass = (god:string) => {
+    for(let key in byCategory) {
+        if(byCategory[key].includes(god))
+            return key;
+    }
+}
+
+const selectRandomGod = (type:string) => {
     let category;
 
-    if(type) {
-        type = parseGodType(type);
-
+    if(type)
         category = byCategory[type];
-    } else
+    else
         category = allGods;
 
-    return category[Math.round(Math.random() * (category.length - 1))];
+    return category[Math.floor(Math.random() * category.length)];
 }
 
 module.exports = {
     parseGodType: parseGodType,
-    selectRandomGod: selectRandomGod
+    selectRandomGod: selectRandomGod,
+    obtainGodClass: obtainGodClass,
+    parseArgument: parseArgument
 }
