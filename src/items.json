@@ -1,0 +1,521 @@
+{
+    "The Executioner": [
+      "physical_power",
+      "attack_speed"
+    ],
+    "Qin's Sais": [
+      "physical_power",
+      "attack_speed"
+    ],
+    "Titan's Bane": [
+      "physical_power",
+      "physical_pen"
+    ],
+    "Brawler's Beat Stick": [
+      "physical_power",
+      "physical_pen"
+    ],
+    "Jotunn's Wrath": [
+      "physical_power",
+      "physical_pen",
+      "cdr",
+      "mana"
+    ],
+    "The Crusher": [
+      "physical_power",
+      "attack_speed",
+      "physical_pen"
+    ],
+    "Transcendence": [
+      "physical_power",
+      "mana",
+      "mp5"
+    ],
+    "Hydra's Lament": [
+      "physical_power",
+      "cdr",
+      "mp5"
+    ],
+    "Heartseeker": [
+      "physical_power",
+      "physical_pen",
+      "mana",
+      "mp5"
+    ],
+    "Warrior Tabi": [
+      "physical_power",
+      "movement_speed",
+      "mana"
+    ],
+    "Ninja Tabi": [
+      "physical_power",
+      "attack_speed",
+      "movement_speed",
+      "mana"
+    ],
+    "Reinforced Greaves": [
+      "physical_power",
+      "health",
+      "ccr",
+      "movement_speed"
+    ],
+    "Talaria Boots": [
+      "physical_power",
+      "movement_speed",
+      "mp5"
+    ],
+    "Deathbringer": [
+      "physical_power",
+      "crit"
+    ],
+    "Rage": [
+      "physical_power",
+      "crit"
+    ],
+    "Malice": [
+      "physical_power",
+      "crit",
+      "cdr"
+    ],
+    "Soul Eater": [
+      "physical_power",
+      "physical_lifesteal",
+      "magical_lifesteal",
+      "physical_pen",
+      "cdr"
+    ],
+    "Devourer's Gauntlet": [
+      "physical_power",
+      "physical_lifesteal"
+    ],
+    "Bloodforge": [
+      "physical_power",
+      "physical_lifesteal"
+    ],
+    "Frostbound Hammer": [
+      "physical_power",
+      "health"
+    ],
+    "Runeforged Hammer": [
+      "physical_power",
+      "health"
+    ],
+    "The Sledge": [
+      "physical_power",
+      "health",
+      "ccr",
+      "mana"
+    ],
+    "Blackthorn Hammer": [
+      "physical_power",
+      "health",
+      "mana"
+    ],
+    "Shifter's Shield": [
+      "physical_power",
+      "physical_protection"
+    ],
+    "Void Shield": [
+      "physical_power",
+      "physical_protection",
+      "health"
+    ],
+    "Gladiator's Shield": [
+      "physical_power",
+      "physical_protection",
+      "health",
+      "cdr"
+    ],
+    "Berserker's Shield": [
+      "physical_power",
+      "attack_speed",
+      "physical_pen",
+      "physical_protection"
+    ],
+    "Runic Shield": [
+      "physical_power",
+      "magical_protection",
+      "health"
+    ],
+    "Ancile": [
+      "physical_power",
+      "magical_protection",
+      "cdr"
+    ],
+    "Caduceus Shield": [
+      "physical_power",
+      "physical_protection",
+      "magical_protection",
+      "health"
+    ],
+    "Ichaival": [
+      "physical_power",
+      "attack_speed"
+    ],
+    "Silverbranch Bow": [
+      "physical_power",
+      "attack_speed",
+      "physical_pen"
+    ],
+    "Atalanta's Bow": [
+      "physical_power",
+      "attack_speed",
+      "physical_pen"
+    ],
+    "Wind Demon": [
+      "physical_power",
+      "attack_speed",
+      "crit"
+    ],
+    "Poisoned Star ": [
+      "physical_power",
+      "attack_speed"
+    ],
+    "Shadowsteel Shuriken": [
+      "physical_power",
+      "attack_speed",
+      "crit"
+    ],
+    "Stone Cutting Sword": [
+      "physical_power",
+      "movement_speed"
+    ],
+    "Hastened Katana": [
+      "physical_power",
+      "attack_speed",
+      "movement_speed"
+    ],
+    "Golden Blade": [
+      "physical_power",
+      "attack_speed",
+      "movement_speed"
+    ],
+    "Serrated Edge": [
+      "physical_power",
+      "physical_lifesteal",
+      "physical_pen",
+      "movement_speed"
+    ],
+    "Bumba's Mask": [
+      "physical_power",
+      "cdr"
+    ],
+    "Pythagorem's Piece": [
+      "magical_power",
+      "magical_lifesteal",
+      "health"
+    ],
+    "Book of the Dead": [
+      "magical_power",
+      "mana"
+    ],
+    "Bancroft's Talon": [
+      "magical_power",
+      "magical_lifesteal",
+      "mana"
+    ],
+    "Typhon's Fang": [
+      "magical_power",
+      "magical_lifesteal",
+      "mana"
+    ],
+    "Soul Gem": [
+      "magical_power",
+      "health",
+      "cdr"
+    ],
+    "Shoes of the Magi": [
+      "magical_power",
+      "magical_lifesteal",
+      "movement_speed",
+      "mana"
+    ],
+    "Shoes of Focus": [
+      "magical_power",
+      "movement_speed",
+      "cdr",
+      "mana"
+    ],
+    "Reinforced Shoes": [
+      "magical_power",
+      "health",
+      "ccr",
+      "movement_speed"
+    ],
+    "Traveler's Shoes": [
+      "magical_power",
+      "movement_speed",
+      "mp5"
+    ],
+    "Demonic Grip": [
+      "magical_power",
+      "attack_speed"
+    ],
+    "Telkhines Ring": [
+      "magical_power",
+      "attack_speed"
+    ],
+    "Hastened Ring": [
+      "magical_power",
+      "attack_speed",
+      "movement_speed"
+    ],
+    "Ring of Hecate": [
+      "magical_power",
+      "attack_speed",
+      "magical_lifesteal"
+    ],
+    "Divine Ruin": [
+      "magical_power"
+    ],
+    "Spear of Desolation": [
+      "magical_power",
+      "cdr"
+    ],
+    "Obsidian Shard": [
+      "magical_power"
+    ],
+    "Spear of the Magus": [
+      "magical_power"
+    ],
+    "Gem of Isolation": [
+      "magical_power",
+      "health",
+      "ccr"
+    ],
+    "Warlock's Staff": [
+      "magical_power",
+      "health",
+      "mana"
+    ],
+    "Ethereal Staff": [
+      "magical_power",
+      "health",
+      "ccr"
+    ],
+    "Rod of Asclepius": [
+      "magical_power",
+      "health",
+      "movement_speed"
+    ],
+    "Book of Thoth": [
+      "magical_power",
+      "mana",
+      "mp5"
+    ],
+    "Polynomicon": [
+      "magical_power",
+      "magical_lifesteal",
+      "mana"
+    ],
+    "Soul Reaver": [
+      "magical_power",
+      "mana"
+    ],
+    "Rod of Tahuti": [
+      "magical_power",
+      "mp5"
+    ],
+    "Chronos' Pendant": [
+      "magical_power",
+      "cdr",
+      "mp5"
+    ],
+    "Charon's Coin": [
+      "magical_power",
+      "mp5"
+    ],
+    "Celestial Legion Helm": [
+      "magical_power",
+      "physical_protection",
+      "mp5"
+    ],
+    "Lotus Crown": [
+      "magical_power",
+      "physical_protection",
+      "mp5"
+    ],
+    "Jade Emperor's Crown": [
+      "magical_power",
+      "physical_protection",
+      "health"
+    ],
+    "Tyrannical Plate Helm": [
+      "magical_power",
+      "physical_protection",
+      "health",
+      "ccr"
+    ],
+    "Void Stone": [
+      "magical_power",
+      "magical_protection",
+      "health"
+    ],
+    "Stone of Fal": [
+      "magical_power",
+      "magical_protection",
+      "cdr"
+    ],
+    "Staff of Myrddin": [
+      "magical_power",
+      "cdr"
+    ],
+    "Asi": [
+      "attack_speed",
+      "physical_lifesteal",
+      "physical_pen"
+    ],
+    "Witchblade": [
+      "attack_speed",
+      "health",
+      "movement_speed",
+      "cdr"
+    ],
+    "Toxic Blade": [
+      "attack_speed",
+      "health",
+      "movement_speed"
+    ],
+    "Odysseus' Bow": [
+      "attack_speed"
+    ],
+    "Poisoned Star": [
+      "crit"
+    ],
+    "Sovereignty": [
+      "physical_protection",
+      "health"
+    ],
+    "Mystical Mail": [
+      "physical_protection",
+      "health",
+      "ccr"
+    ],
+    "Midgardian Mail": [
+      "physical_protection",
+      "health"
+    ],
+    "Emperor's Armor": [
+      "physical_protection",
+      "health"
+    ],
+    "Hide of the Nemean Lion": [
+      "physical_protection",
+      "mana",
+      "mp5"
+    ],
+    "Breastplate of Valor": [
+      "physical_protection",
+      "cdr",
+      "mana",
+      "mp5"
+    ],
+    "Spectral Armor": [
+      "physical_protection",
+      "health",
+      "mana",
+      "mp5"
+    ],
+    "Contagion": [
+      "physical_protection",
+      "health",
+      "mana",
+      "mp5"
+    ],
+    "Magi's Cloak": [
+      "physical_protection",
+      "magical_protection",
+      "health"
+    ],
+    "Hide of the Urchin": [
+      "physical_protection",
+      "magical_protection",
+      "health",
+      "mana"
+    ],
+    "Spirit Robe": [
+      "physical_protection",
+      "magical_protection",
+      "ccr",
+      "cdr"
+    ],
+    "Mantle of Discord": [
+      "physical_protection",
+      "magical_protection",
+      "cdr"
+    ],
+    "Pridwen": [
+      "physical_protection",
+      "magical_protection",
+      "cdr"
+    ],
+    "Bulwark of Hope": [
+      "magical_protection",
+      "health",
+      "ccr"
+    ],
+    "Pestilence": [
+      "magical_protection",
+      "health"
+    ],
+    "Heartward Amulet": [
+      "magical_protection",
+      "health"
+    ],
+    "Talisman of Energy": [
+      "magical_protection",
+      "health"
+    ],
+    "Genji's Guard": [
+      "magical_protection",
+      "health",
+      "cdr",
+      "mp5"
+    ],
+    "Oni Hunter's Garb": [
+      "magical_protection",
+      "health",
+      "mp5"
+    ],
+    "Shogun's Kusari": [
+      "magical_protection",
+      "ccr",
+      "cdr",
+      "mp5"
+    ],
+    "Winged Blade": [
+      "health",
+      "ccr",
+      "movement_speed"
+    ],
+    "Relic Dagger": [
+      "health",
+      "movement_speed",
+      "cdr"
+    ],
+    "Stone of Gaia": [
+      "health",
+      "hp5",
+      "mp5"
+    ],
+    "Shield of Regrowth": [
+      "health",
+      "hp5",
+      "cdr",
+      "mp5"
+    ],
+    "Mail of Renewal": [
+      "health",
+      "hp5",
+      "cdr"
+    ],
+    "Gauntlet of Thebes": [
+      "health",
+      "hp5"
+    ],
+    "Doom Orb": [
+      "movement_speed",
+      "mana",
+      "mp5"
+    ]
+}

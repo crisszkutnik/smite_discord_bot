@@ -1,0 +1,18 @@
+{
+    "Fail-not": {
+        "effects": ["phyisical_power, phyisical_penetration, cdr, crit"],
+        "class": ["adc"]
+    },
+    "Arondight": {
+        "effects": ["physical_power, cdr"],
+        "class": ["warrrior", "jungle"]
+    },
+    "Lono's Mask": {
+        "effects": ["health", "magical_protection", "physical_protection", "ccr"],
+        "class": ["jungle, adc, mage"]
+    },
+    "Rangda's Mask": {
+        "effects": ["physical_power", "magical_power"],
+        "class": ["guardian, warrrior"]
+    }
+}

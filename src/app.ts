@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
 import * as fs from "fs";
-import { bot_key, prefix } from "../keys.json";
+import { bot_key, prefix } from "./keys.json";
 
 const client = new Discord.Client();
 client.commands = new Discord.Collection();
