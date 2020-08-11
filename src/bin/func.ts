@@ -22,19 +22,27 @@ const filterItems = (godClass, args?) => {
     let res = [];
 
     for(let key in items) {
-        if(items[key].canBuy.includes(godClass)) {
+        if(items[key].canBuy.length === 0 || items[key].canBuy.includes(godClass)) {
             let include = true;
 
-            if(args) {
-                for(let i = 0; i < args.length; i++)
-                    if(!godClass[key].effects.includes(args[i]))
-                        include = false;
-            }
+            if(args && args.length > 0) {
+                let hasAny = false;
+
+                let i = 0;
+                while(i < args.length && !hasAny) {
+                    hasAny = items[key].effects.includes(args[i]);
+                    i++;
+                }
+
+                include = hasAny;
+            }       
 
             if(include)
                 res.push(key);
         }
     }
+
+    console.log(res);
 
     return res;
 }
