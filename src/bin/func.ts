@@ -18,11 +18,14 @@ const obtainGodClass = (god:string) => {
             return key;
 }
 
-const filterItems = (godClass, args?) => {
+const filterItems = (godClass, args?, itemList?) => {
     let res = [];
 
-    for(let key in items) {
-        if(items[key].canBuy.length === 0 || items[key].canBuy.includes(godClass)) {
+    if(!itemList)
+        itemList = items;
+
+    for(let key in itemList) {
+        if(itemList[key].canBuy.length === 0 || itemList[key].canBuy.includes(godClass)) {
             let include = true;
 
             if(args && args.length > 0) {
@@ -30,7 +33,7 @@ const filterItems = (godClass, args?) => {
 
                 let i = 0;
                 while(i < args.length && !hasAny) {
-                    hasAny = items[key].effects.includes(args[i]);
+                    hasAny = itemList[key].effects.includes(args[i]);
                     i++;
                 }
 
@@ -42,30 +45,27 @@ const filterItems = (godClass, args?) => {
         }
     }
 
-    console.log(res);
-
     return res;
 }
 
 const verifyBuild = (build:string[], possibleItems:string[]) => {
     let hasBoots = false;
+    let bootsRegExp = /Shoes+Boots+Tabi+Greaves/;
+    let items = {};
 
     for(let i = 0; i < build.length; i++) {
-        let isBoot = /Shoes+Boots+Tabi+Greaves/.test(build[i]);
-
-        if(isBoot && hasBoots) {
-            while((/Shoes+Boots+Tabi+Greaves/.test(build[i])))
+        if(bootsRegExp.test(build[i]) && hasBoots) {
+            while(bootsRegExp.test(build[i]))
                 build[i] = obtainRandom(possibleItems);
         }
-        
-        if(isBoot)
+
+        if(bootsRegExp.test(build[i]))
             hasBoots = true;
 
-
-        for(let j = i + 1; j < build.length; j++) {
-            if(build[i] === build[j])
-                build[j] = obtainRandom(possibleItems);
-        }
+        if(items[build[i]])
+            build[i] = obtainRandom(possibleItems);
+        else
+            items[build[i]] = true;
     }
 
     return build;

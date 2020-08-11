@@ -99,27 +99,46 @@
                "warrior"
             ]
         }
-    },
-    "acorns": {
-        "Evergreen Acorn": [
-            "physical_power",
-            "movement_speed",
-            "health"
-        ],
-        "Thickbark Accorn": [
-            "phyisical_power",
-            "movement_speed",
-            "physical_protection",
-            "magical_protection"
-        ],
-        "Bristlebush Accorn": [
-            "physical_power",
-            "movement_speed",
-            "crit"
-        ],
-        "Thistlethorn Accorn": [
-            "physical_power",
-            "movement_speed"
-        ]
+    }, "acorns": {
+        "Evergreen Acorn": {
+            "effects": [
+               "physical_power",
+               "movement_speed",
+               "health"
+            ],
+            "canBuy": [
+               "jungle"
+            ]
+        },
+        "Thickbark Accorn": {
+            "effects":[
+               "phyisical_power",
+               "movement_speed",
+               "physical_protection",
+               "magical_protection"
+            ],
+            "canBuy": [
+               "jungle"
+            ]
+        },
+        "Bristlebush Accorn": {
+           "effects": [
+               "physical_power",
+               "movement_speed",
+               "crit"
+            ],
+            "canBuy": [
+               "jungle"
+            ]
+        },
+        "Thistlethorn Accorn": {
+           "effects": [
+               "physical_power",
+               "movement_speed"
+            ],
+            "canBuy": [
+               "jungle"
+            ]
+        }
     }
 }
