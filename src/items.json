@@ -1,523 +1,1095 @@
 {
-  "items": {
-    "The Executioner": [
-      "physical_power",
-      "attack_speed"
-    ],
-    "Qin's Sais": [
-      "physical_power",
-      "attack_speed"
-    ],
-    "Titan's Bane": [
-      "physical_power",
-      "physical_pen"
-    ],
-    "Brawler's Beat Stick": [
-      "physical_power",
-      "physical_pen"
-    ],
-    "Jotunn's Wrath": [
-      "physical_power",
-      "physical_pen",
-      "cdr",
-      "mana"
-    ],
-    "The Crusher": [
-      "physical_power",
-      "attack_speed",
-      "physical_pen"
-    ],
-    "Transcendence": [
-      "physical_power",
-      "mana",
-      "mp5"
-    ],
-    "Hydra's Lament": [
-      "physical_power",
-      "cdr",
-      "mp5"
-    ],
-    "Heartseeker": [
-      "physical_power",
-      "physical_pen",
-      "mana",
-      "mp5"
-    ],
-    "Warrior Tabi": [
-      "physical_power",
-      "movement_speed",
-      "mana"
-    ],
-    "Ninja Tabi": [
-      "physical_power",
-      "attack_speed",
-      "movement_speed",
-      "mana"
-    ],
-    "Reinforced Greaves": [
-      "physical_power",
-      "health",
-      "ccr",
-      "movement_speed"
-    ],
-    "Talaria Boots": [
-      "physical_power",
-      "movement_speed",
-      "mp5"
-    ],
-    "Deathbringer": [
-      "physical_power",
-      "crit"
-    ],
-    "Rage": [
-      "physical_power",
-      "crit"
-    ],
-    "Malice": [
-      "physical_power",
-      "crit",
-      "cdr"
-    ],
-    "Soul Eater": [
-      "physical_power",
-      "physical_lifesteal",
-      "magical_lifesteal",
-      "physical_pen",
-      "cdr"
-    ],
-    "Devourer's Gauntlet": [
-      "physical_power",
-      "physical_lifesteal"
-    ],
-    "Bloodforge": [
-      "physical_power",
-      "physical_lifesteal"
-    ],
-    "Frostbound Hammer": [
-      "physical_power",
-      "health"
-    ],
-    "Runeforged Hammer": [
-      "physical_power",
-      "health"
-    ],
-    "The Sledge": [
-      "physical_power",
-      "health",
-      "ccr",
-      "mana"
-    ],
-    "Blackthorn Hammer": [
-      "physical_power",
-      "health",
-      "mana"
-    ],
-    "Shifter's Shield": [
-      "physical_power",
-      "physical_protection"
-    ],
-    "Void Shield": [
-      "physical_power",
-      "physical_protection",
-      "health"
-    ],
-    "Gladiator's Shield": [
-      "physical_power",
-      "physical_protection",
-      "health",
-      "cdr"
-    ],
-    "Berserker's Shield": [
-      "physical_power",
-      "attack_speed",
-      "physical_pen",
-      "physical_protection"
-    ],
-    "Runic Shield": [
-      "physical_power",
-      "magical_protection",
-      "health"
-    ],
-    "Ancile": [
-      "physical_power",
-      "magical_protection",
-      "cdr"
-    ],
-    "Caduceus Shield": [
-      "physical_power",
-      "physical_protection",
-      "magical_protection",
-      "health"
-    ],
-    "Ichaival": [
-      "physical_power",
-      "attack_speed"
-    ],
-    "Silverbranch Bow": [
-      "physical_power",
-      "attack_speed",
-      "physical_pen"
-    ],
-    "Atalanta's Bow": [
-      "physical_power",
-      "attack_speed",
-      "physical_pen"
-    ],
-    "Wind Demon": [
-      "physical_power",
-      "attack_speed",
-      "crit"
-    ],
-    "Poisoned Star ": [
-      "physical_power",
-      "attack_speed"
-    ],
-    "Shadowsteel Shuriken": [
-      "physical_power",
-      "attack_speed",
-      "crit"
-    ],
-    "Stone Cutting Sword": [
-      "physical_power",
-      "movement_speed"
-    ],
-    "Hastened Katana": [
-      "physical_power",
-      "attack_speed",
-      "movement_speed"
-    ],
-    "Golden Blade": [
-      "physical_power",
-      "attack_speed",
-      "movement_speed"
-    ],
-    "Serrated Edge": [
-      "physical_power",
-      "physical_lifesteal",
-      "physical_pen",
-      "movement_speed"
-    ],
-    "Bumba's Mask": [
-      "physical_power",
-      "cdr"
-    ],
-    "Pythagorem's Piece": [
-      "magical_power",
-      "magical_lifesteal",
-      "health"
-    ],
-    "Book of the Dead": [
-      "magical_power",
-      "mana"
-    ],
-    "Bancroft's Talon": [
-      "magical_power",
-      "magical_lifesteal",
-      "mana"
-    ],
-    "Typhon's Fang": [
-      "magical_power",
-      "magical_lifesteal",
-      "mana"
-    ],
-    "Soul Gem": [
-      "magical_power",
-      "health",
-      "cdr"
-    ],
-    "Shoes of the Magi": [
-      "magical_power",
-      "magical_lifesteal",
-      "movement_speed",
-      "mana"
-    ],
-    "Shoes of Focus": [
-      "magical_power",
-      "movement_speed",
-      "cdr",
-      "mana"
-    ],
-    "Reinforced Shoes": [
-      "magical_power",
-      "health",
-      "ccr",
-      "movement_speed"
-    ],
-    "Traveler's Shoes": [
-      "magical_power",
-      "movement_speed",
-      "mp5"
-    ],
-    "Demonic Grip": [
-      "magical_power",
-      "attack_speed"
-    ],
-    "Telkhines Ring": [
-      "magical_power",
-      "attack_speed"
-    ],
-    "Hastened Ring": [
-      "magical_power",
-      "attack_speed",
-      "movement_speed"
-    ],
-    "Ring of Hecate": [
-      "magical_power",
-      "attack_speed",
-      "magical_lifesteal"
-    ],
-    "Divine Ruin": [
-      "magical_power"
-    ],
-    "Spear of Desolation": [
-      "magical_power",
-      "cdr"
-    ],
-    "Obsidian Shard": [
-      "magical_power"
-    ],
-    "Spear of the Magus": [
-      "magical_power"
-    ],
-    "Gem of Isolation": [
-      "magical_power",
-      "health",
-      "ccr"
-    ],
-    "Warlock's Staff": [
-      "magical_power",
-      "health",
-      "mana"
-    ],
-    "Ethereal Staff": [
-      "magical_power",
-      "health",
-      "ccr"
-    ],
-    "Rod of Asclepius": [
-      "magical_power",
-      "health",
-      "movement_speed"
-    ],
-    "Book of Thoth": [
-      "magical_power",
-      "mana",
-      "mp5"
-    ],
-    "Polynomicon": [
-      "magical_power",
-      "magical_lifesteal",
-      "mana"
-    ],
-    "Soul Reaver": [
-      "magical_power",
-      "mana"
-    ],
-    "Rod of Tahuti": [
-      "magical_power",
-      "mp5"
-    ],
-    "Chronos' Pendant": [
-      "magical_power",
-      "cdr",
-      "mp5"
-    ],
-    "Charon's Coin": [
-      "magical_power",
-      "mp5"
-    ],
-    "Celestial Legion Helm": [
-      "magical_power",
-      "physical_protection",
-      "mp5"
-    ],
-    "Lotus Crown": [
-      "magical_power",
-      "physical_protection",
-      "mp5"
-    ],
-    "Jade Emperor's Crown": [
-      "magical_power",
-      "physical_protection",
-      "health"
-    ],
-    "Tyrannical Plate Helm": [
-      "magical_power",
-      "physical_protection",
-      "health",
-      "ccr"
-    ],
-    "Void Stone": [
-      "magical_power",
-      "magical_protection",
-      "health"
-    ],
-    "Stone of Fal": [
-      "magical_power",
-      "magical_protection",
-      "cdr"
-    ],
-    "Staff of Myrddin": [
-      "magical_power",
-      "cdr"
-    ],
-    "Asi": [
-      "attack_speed",
-      "physical_lifesteal",
-      "physical_pen"
-    ],
-    "Witchblade": [
-      "attack_speed",
-      "health",
-      "movement_speed",
-      "cdr"
-    ],
-    "Toxic Blade": [
-      "attack_speed",
-      "health",
-      "movement_speed"
-    ],
-    "Odysseus' Bow": [
-      "attack_speed"
-    ],
-    "Poisoned Star": [
-      "crit"
-    ],
-    "Sovereignty": [
-      "physical_protection",
-      "health"
-    ],
-    "Mystical Mail": [
-      "physical_protection",
-      "health",
-      "ccr"
-    ],
-    "Midgardian Mail": [
-      "physical_protection",
-      "health"
-    ],
-    "Emperor's Armor": [
-      "physical_protection",
-      "health"
-    ],
-    "Hide of the Nemean Lion": [
-      "physical_protection",
-      "mana",
-      "mp5"
-    ],
-    "Breastplate of Valor": [
-      "physical_protection",
-      "cdr",
-      "mana",
-      "mp5"
-    ],
-    "Spectral Armor": [
-      "physical_protection",
-      "health",
-      "mana",
-      "mp5"
-    ],
-    "Contagion": [
-      "physical_protection",
-      "health",
-      "mana",
-      "mp5"
-    ],
-    "Magi's Cloak": [
-      "physical_protection",
-      "magical_protection",
-      "health"
-    ],
-    "Hide of the Urchin": [
-      "physical_protection",
-      "magical_protection",
-      "health",
-      "mana"
-    ],
-    "Spirit Robe": [
-      "physical_protection",
-      "magical_protection",
-      "ccr",
-      "cdr"
-    ],
-    "Mantle of Discord": [
-      "physical_protection",
-      "magical_protection",
-      "cdr"
-    ],
-    "Pridwen": [
-      "physical_protection",
-      "magical_protection",
-      "cdr"
-    ],
-    "Bulwark of Hope": [
-      "magical_protection",
-      "health",
-      "ccr"
-    ],
-    "Pestilence": [
-      "magical_protection",
-      "health"
-    ],
-    "Heartward Amulet": [
-      "magical_protection",
-      "health"
-    ],
-    "Talisman of Energy": [
-      "magical_protection",
-      "health"
-    ],
-    "Genji's Guard": [
-      "magical_protection",
-      "health",
-      "cdr",
-      "mp5"
-    ],
-    "Oni Hunter's Garb": [
-      "magical_protection",
-      "health",
-      "mp5"
-    ],
-    "Shogun's Kusari": [
-      "magical_protection",
-      "ccr",
-      "cdr",
-      "mp5"
-    ],
-    "Winged Blade": [
-      "health",
-      "ccr",
-      "movement_speed"
-    ],
-    "Relic Dagger": [
-      "health",
-      "movement_speed",
-      "cdr"
-    ],
-    "Stone of Gaia": [
-      "health",
-      "hp5",
-      "mp5"
-    ],
-    "Shield of Regrowth": [
-      "health",
-      "hp5",
-      "cdr",
-      "mp5"
-    ],
-    "Mail of Renewal": [
-      "health",
-      "hp5",
-      "cdr"
-    ],
-    "Gauntlet of Thebes": [
-      "health",
-      "hp5"
-    ],
-    "Doom Orb": [
-      "movement_speed",
-      "mana",
-      "mp5"
-    ]
-  }
+   "items":{
+      "The Executioner":{
+         "effects":[
+            "physical_power",
+            "attack_speed"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Qin's Sais":{
+         "effects":[
+            "physical_power",
+            "attack_speed"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Titan's Bane":{
+         "effects":[
+            "physical_power",
+            "physical_pen"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Brawler's Beat Stick":{
+         "effects":[
+            "physical_power",
+            "physical_pen"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Jotunn's Wrath":{
+         "effects":[
+            "physical_power",
+            "physical_pen",
+            "cdr",
+            "mana"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "The Crusher":{
+         "effects":[
+            "physical_power",
+            "attack_speed",
+            "physical_pen"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Transcendence":{
+         "effects":[
+            "physical_power",
+            "mana",
+            "mp5"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Hydra's Lament":{
+         "effects":[
+            "physical_power",
+            "cdr",
+            "mp5"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Heartseeker":{
+         "effects":[
+            "physical_power",
+            "physical_pen",
+            "mana",
+            "mp5"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Deathbringer":{
+         "effects":[
+            "physical_power",
+            "crit"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Rage":{
+         "effects":[
+            "physical_power",
+            "crit"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Malice":{
+         "effects":[
+            "physical_power",
+            "crit",
+            "cdr"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Soul Eater":{
+         "effects":[
+            "physical_power",
+            "physical_lifesteal",
+            "magical_lifesteal",
+            "physical_pen",
+            "cdr"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Devourer's Gauntlet":{
+         "effects":[
+            "physical_power",
+            "physical_lifesteal"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Bloodforge":{
+         "effects":[
+            "physical_power",
+            "physical_lifesteal"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Frostbound Hammer":{
+         "effects":[
+            "physical_power",
+            "health"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Runeforged Hammer":{
+         "effects":[
+            "physical_power",
+            "health"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "The Sledge":{
+         "effects":[
+            "physical_power",
+            "health",
+            "ccr",
+            "mana"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Blackthorn Hammer":{
+         "effects":[
+            "physical_power",
+            "health",
+            "mana"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Shifter's Shield":{
+         "effects":[
+            "physical_power",
+            "physical_protection"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Void Shield":{
+         "effects":[
+            "physical_power",
+            "physical_protection",
+            "health"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Gladiator's Shield":{
+         "effects":[
+            "physical_power",
+            "physical_protection",
+            "health",
+            "cdr"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Berserker's Shield":{
+         "effects":[
+            "physical_power",
+            "attack_speed",
+            "physical_pen",
+            "physical_protection"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Fail-not": {
+         "effects": [
+            "physical_power",
+            "crit",
+            "cdr",
+            "physical_pen"
+         ],
+         "canBuy": [
+            "adc"
+         ]
+      },
+      "Arondight": {
+         "effects": [
+            "physical_power",
+            "cdr"
+         ],
+         "canBuy": [
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Runic Shield":{
+         "effects":[
+            "physical_power",
+            "magical_protection",
+            "health"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Ancile": {
+         "effects":[
+            "physical_power",
+            "magical_protection",
+            "cdr"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Caduceus Shield":{
+         "effects":[
+            "physical_power",
+            "physical_protection",
+            "magical_protection",
+            "health"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Ichaival":{
+         "effects":[
+            "physical_power",
+            "attack_speed"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Silverbranch Bow":{
+         "effects":[
+            "physical_power",
+            "attack_speed",
+            "physical_pen"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Atalanta's Bow":{
+         "effects":[
+            "physical_power",
+            "attack_speed",
+            "physical_pen"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Wind Demon":{
+         "effects":[
+            "physical_power",
+            "attack_speed",
+            "crit"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Poisoned Star ":{
+         "effects":[
+            "physical_power",
+            "attack_speed"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Shadowsteel Shuriken":{
+         "effects":[
+            "physical_power",
+            "attack_speed",
+            "crit"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Stone Cutting Sword":{
+         "effects":[
+            "physical_power",
+            "movement_speed"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Hastened Katana":{
+         "effects":[
+            "physical_power",
+            "attack_speed",
+            "movement_speed"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Golden Blade":{
+         "effects":[
+            "physical_power",
+            "attack_speed",
+            "movement_speed"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Serrated Edge":{
+         "effects":[
+            "physical_power",
+            "physical_lifesteal",
+            "physical_pen",
+            "movement_speed"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Pythagorem's Piece":{
+         "effects":[
+            "magical_power",
+            "magical_lifesteal",
+            "health"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Book of the Dead":{
+         "effects":[
+            "magical_power",
+            "mana"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Bancroft's Talon":{
+         "effects":[
+            "magical_power",
+            "magical_lifesteal",
+            "mana"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Typhon's Fang":{
+         "effects":[
+            "magical_power",
+            "magical_lifesteal",
+            "mana"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Soul Gem":{
+         "effects":[
+            "magical_power",
+            "health",
+            "cdr"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Demonic Grip":{
+         "effects":[
+            "magical_power",
+            "attack_speed"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Telkhines Ring":{
+         "effects":[
+            "magical_power",
+            "attack_speed"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Hastened Ring":{
+         "effects":[
+            "magical_power",
+            "attack_speed",
+            "movement_speed"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Ring of Hecate":{
+         "effects":[
+            "magical_power",
+            "attack_speed",
+            "magical_lifesteal"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Divine Ruin":{
+         "effects":[
+            "magical_power"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Spear of Desolation":{
+         "effects":[
+            "magical_power",
+            "cdr"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Obsidian Shard":{
+         "effects":[
+            "magical_power"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Spear of the Magus":{
+         "effects":[
+            "magical_power"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Gem of Isolation":{
+         "effects":[
+            "magical_power",
+            "health",
+            "ccr"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Warlock's Staff":{
+         "effects":[
+            "magical_power",
+            "health",
+            "mana"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Ethereal Staff":{
+         "effects":[
+            "magical_power",
+            "health",
+            "ccr"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Rod of Asclepius":{
+         "effects":[
+            "magical_power",
+            "health",
+            "movement_speed"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Book of Thoth":{
+         "effects":[
+            "magical_power",
+            "mana",
+            "mp5"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Polynomicon":{
+         "effects":[
+            "magical_power",
+            "magical_lifesteal",
+            "mana"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Soul Reaver":{
+         "effects":[
+            "magical_power",
+            "mana"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Rod of Tahuti":{
+         "effects":[
+            "magical_power",
+            "mp5"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Chronos' Pendant":{
+         "effects":[
+            "magical_power",
+            "cdr",
+            "mp5"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Charon's Coin":{
+         "effects":[
+            "magical_power",
+            "mp5"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Celestial Legion Helm":{
+         "effects":[
+            "magical_power",
+            "physical_protection",
+            "mp5"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Lotus Crown":{
+         "effects":[
+            "magical_power",
+            "physical_protection",
+            "mp5"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Jade Emperor's Crown":{
+         "effects":[
+            "magical_power",
+            "physical_protection",
+            "health"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Tyrannical Plate Helm":{
+         "effects":[
+            "magical_power",
+            "physical_protection",
+            "health",
+            "ccr"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Void Stone":{
+         "effects":[
+            "magical_power",
+            "magical_protection",
+            "health"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Stone of Fal":{
+         "effects":[
+            "magical_power",
+            "magical_protection",
+            "cdr"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Staff of Myrddin":{
+         "effects":[
+            "magical_power",
+            "cdr"
+         ],
+         "canBuy":[
+            "mage",
+            "guardian"
+         ]
+      },
+      "Asi":{
+         "effects":[
+            "attack_speed",
+            "physical_lifesteal",
+            "physical_pen"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Witchblade":{
+         "effects":[
+            "attack_speed",
+            "health",
+            "movement_speed",
+            "cdr"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Toxic Blade":{
+         "effects":[
+            "attack_speed",
+            "health",
+            "movement_speed"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Odysseus' Bow":{
+         "effects":[
+            "attack_speed"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Poisoned Star":{
+         "effects":[
+            "crit",
+            "attack_speed",
+            "physical_power"
+         ],
+         "canBuy":[
+            "adc",
+            "jungle",
+            "warrior"
+         ]
+      },
+      "Sovereignty":{
+         "effects":[
+            "physical_protection",
+            "health"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Mystical Mail":{
+         "effects":[
+            "physical_protection",
+            "health",
+            "ccr"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Midgardian Mail":{
+         "effects":[
+            "physical_protection",
+            "health"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Emperor's Armor":{
+         "effects":[
+            "physical_protection",
+            "health"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Hide of the Nemean Lion":{
+         "effects":[
+            "physical_protection",
+            "mana",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Breastplate of Valor":{
+         "effects":[
+            "physical_protection",
+            "cdr",
+            "mana",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Spectral Armor":{
+         "effects":[
+            "physical_protection",
+            "health",
+            "mana",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Contagion":{
+         "effects":[
+            "physical_protection",
+            "health",
+            "mana",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Magi's Cloak":{
+         "effects":[
+            "physical_protection",
+            "magical_protection",
+            "health"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Hide of the Urchin":{
+         "effects":[
+            "physical_protection",
+            "magical_protection",
+            "health",
+            "mana"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Spirit Robe":{
+         "effects":[
+            "physical_protection",
+            "magical_protection",
+            "ccr",
+            "cdr"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Mantle of Discord":{
+         "effects":[
+            "physical_protection",
+            "magical_protection",
+            "cdr"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Pridwen":{
+         "effects":[
+            "physical_protection",
+            "magical_protection",
+            "cdr"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Bulwark of Hope":{
+         "effects":[
+            "magical_protection",
+            "health",
+            "ccr"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Pestilence":{
+         "effects":[
+            "magical_protection",
+            "health"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Heartward Amulet":{
+         "effects":[
+            "magical_protection",
+            "health"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Talisman of Energy":{
+         "effects":[
+            "magical_protection",
+            "health"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Genji's Guard":{
+         "effects":[
+            "magical_protection",
+            "health",
+            "cdr",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Oni Hunter's Garb":{
+         "effects":[
+            "magical_protection",
+            "health",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Shogun's Kusari":{
+         "effects":[
+            "magical_protection",
+            "ccr",
+            "cdr",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Winged Blade":{
+         "effects":[
+            "health",
+            "ccr",
+            "movement_speed"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Relic Dagger":{
+         "effects":[
+            "health",
+            "movement_speed",
+            "cdr"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Stone of Gaia":{
+         "effects":[
+            "health",
+            "hp5",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Shield of Regrowth":{
+         "effects":[
+            "health",
+            "hp5",
+            "cdr",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Mail of Renewal":{
+         "effects":[
+            "health",
+            "hp5",
+            "cdr"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Gauntlet of Thebes":{
+         "effects":[
+            "health",
+            "hp5"
+         ],
+         "canBuy":[
+
+         ]
+      },
+      "Doom Orb":{
+         "effects":[
+            "movement_speed",
+            "mana",
+            "mp5"
+         ],
+         "canBuy":[
+
+         ]
+      }
+   }
 }

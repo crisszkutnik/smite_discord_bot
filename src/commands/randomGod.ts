@@ -1,48 +1,84 @@
-const { selectRandomGod, parseGodType, obtainGodClass } = require('./../bin/func');
-import generateBuild from '../bin/generateBuild'
+import { classRegExp, buildParams, rGodSyntax, parseGodType } from '../bin/regExp'
+import God from '../bin/godClass'
+
+const parseBuildParams = (args:string[], godType:string) => {
+    let res = [];
+
+    args.forEach(e => {
+        if(["penetration", "pen", "lifesteal", "power"].includes(e)) {
+            if(godType === 'mage' || godType === "guardian")
+                res.push("magical_" + e);
+            else
+                res.push("phyisical_" + e);
+        } else if(buildParams.test(e))
+            res.push(e);
+        else
+            return null;
+    });
+
+    return res;
+}
+
+const errorFound = (message) => {
+    message.channel.send("Error encontrado. La sintaxis del comando es:\n``+rgod class? build? b? (build-params)?``");
+}
+
+const parseArgs = (arg1:string, arg2:string, args:string[]) => {
+    let godType:any = parseGodType(arg1);
+    let includeBoots;
+    let includeBuild;
+
+    if(godType) {
+        if(arg2 === "build") {
+            includeBuild = true;
+
+            if(args[0] === "b") {
+                args.shift();
+                includeBoots = true;
+            } else
+                includeBoots = false;
+        }
+    } else {
+        if(arg1 === "build") {
+            includeBuild = true;
+
+            if(arg2 === "b")
+                includeBoots = true;
+            else
+                includeBoots = false;
+        }
+    }
+
+    return [godType, includeBuild, includeBoots, args];
+}
 
 module.exports = {
     name: "randomGod",
-    execute(message, [arg1, arg2, ...args]:[string, string, string]) {
-        let godClass = parseGodType(arg1);
-        let includeBuild;
-        let god;
-        let build = [];
-        let buildString = "";
-        let parseError = false;
+    execute(message, allArgs) {
+        let [arg1, arg2, ...args] = allArgs;
 
-        // If no god class specified, it will be undefined and arg2 will be the build specifier
-        if(!godClass) {
-            includeBuild = arg1;
-            god = selectRandomGod();
-            //godClass = obtainGodClass(god);
-        } else {
-            god = selectRandomGod(godClass);
-            includeBuild = arg2;
+        // Check syntax
+        if(!rGodSyntax.test(allArgs.join(" "))) {
+            errorFound(message);
+            return;
         }
 
-        // If argument exists
+        let godType, includeBuild, includeBoots;
+        [godType, includeBuild, includeBoots, args] = parseArgs(arg1, arg2, args);
+        
+        let god = new God(godType, "godType");
+
+        message.channel.send(god.godName);
+
         if(includeBuild) {
-            if(includeBuild === "build") {
-                let boots = false;
-        
-                if(args[0] === 'b') {
-                    boots = true;
-                    args.shift();
-                }
-        
-                build = generateBuild(god, boots, args);
-    
-                build.forEach(e => buildString += `\n${e}`);
-            } else
-                parseError = true;
-        }
+            god.generateRandomBuild(includeBoots, args);
 
-        if(god && !parseError)
-            message.channel.send(god + buildString);
-        else {
-            message.channel.send("Comando incorrecto. La sintaxis es:");
-            message.channel.send(`rgod class? build? b? br? build-params?`);
+            god.sendBuild(message);
         }
     }
 };
+
+/*
+TODO:
+- Syntax checker does not work
+*/

@@ -1,0 +1,125 @@
+{
+    "magical_boots": {
+        "Shoes of the Magi":{
+            "effects":[
+               "magical_power",
+               "magical_lifesteal",
+               "movement_speed",
+               "mana"
+            ],
+            "canBuy":[
+               "mage",
+               "guardian"
+            ]
+         },
+         "Shoes of Focus":{
+            "effects":[
+               "magical_power",
+               "movement_speed",
+               "cdr",
+               "mana"
+            ],
+            "canBuy":[
+               "mage",
+               "guardian"
+            ]
+         },
+         "Reinforced Shoes":{
+            "effects":[
+               "magical_power",
+               "health",
+               "ccr",
+               "movement_speed"
+            ],
+            "canBuy":[
+               "mage",
+               "guardian"
+            ]
+         },
+         "Traveler's Shoes":{
+            "effects":[
+               "magical_power",
+               "movement_speed",
+               "mp5"
+            ],
+            "canBuy":[
+               "mage",
+               "guardian"
+            ]
+         }
+    },
+    "physical_boots": {
+        "Warrior Tabi":{
+            "effects":[
+               "physical_power",
+               "movement_speed",
+               "mana"
+            ],
+            "canBuy":[
+               "adc",
+               "jungle",
+               "warrior"
+            ]
+         },
+         "Ninja Tabi":{
+            "effects":[
+               "physical_power",
+               "attack_speed",
+               "movement_speed",
+               "mana"
+            ],
+            "canBuy":[
+               "adc",
+               "jungle",
+               "warrior"
+            ]
+         },
+         "Reinforced Greaves":{
+            "effects":[
+               "physical_power",
+               "health",
+               "ccr",
+               "movement_speed"
+            ],
+            "canBuy":[
+               "adc",
+               "jungle",
+               "warrior"
+            ]
+         },
+        "Talaria Boots":{
+            "effects":[
+               "physical_power",
+               "movement_speed",
+               "mp5"
+            ],
+            "canBuy":[
+               "adc",
+               "jungle",
+               "warrior"
+            ]
+        }
+    },
+    "acorns": {
+        "Evergreen Acorn": [
+            "physical_power",
+            "movement_speed",
+            "health"
+        ],
+        "Thickbark Accorn": [
+            "phyisical_power",
+            "movement_speed",
+            "physical_protection",
+            "magical_protection"
+        ],
+        "Bristlebush Accorn": [
+            "physical_power",
+            "movement_speed",
+            "crit"
+        ],
+        "Thistlethorn Accorn": [
+            "physical_power",
+            "movement_speed"
+        ]
+    }
+}

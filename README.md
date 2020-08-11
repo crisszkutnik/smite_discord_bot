@@ -23,7 +23,7 @@ All other keywords are avaiable on the keywords section (at the end of the file)
 **Critical chance**: crit
 **Physical/Magical penetration**: penetration, pen
 **Phyisical/Magical power**: power
-**Physical/Magical lifesteal**: physical
+**Physical/Magical lifesteal**: lifesteal
 **Attack speed**: attack_speed
 **Movement speed**: movement_speed
 **Health**: health

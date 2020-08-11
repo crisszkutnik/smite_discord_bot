@@ -1,52 +1,71 @@
-import { allGods, byCategory } from './../gods.json';
+import { items } from '../items.json'
+import { allGods, byCategory } from '../gods.json'
 
-const parseGodType = (type:string) => {
-    if(["jungle", "guardian", "warrior", "adc", "mage"].includes(type))
-        return type;
-    else if(["supp", "support", "sup"].includes(type))
-        return "guardian";
-    else if(["jungler", "jungla", "asesino", "assassin", "jg"].includes(type))
-        return "jungle";
-    else if(["mid", "mago"].includes(type))
-        return "mage";
-    else if(["solo", "guerrero"].includes(type))
-        return "warrior";
-    else if(["hunter", "cazador", "carry"].includes(type))
-        return "adc";
-    else
-        return undefined
+const obtainRandom = (arr:any[]) => {
+    return arr[Math.floor(Math.random() * arr.length)];
 }
 
-const parseArgument = (arg:string, type:string) => {
-    if(["penetration", "pen", "lifesteal", "power"].includes(arg)) {
-        if(type === 'mage' || type === "guardian")
-            return "magical_" + arg;
-        else
-            return "phyisical_" + arg;
-    }
+const selectRandomGod = (category?:string) => {
+    if(category)
+        return obtainRandom(byCategory[category]);
+    else
+        return obtainRandom(allGods);
 }
 
 const obtainGodClass = (god:string) => {
-    for(let key in byCategory) {
+    for(let key in byCategory)
         if(byCategory[key].includes(god))
             return key;
+}
+
+const filterItems = (godClass, args?) => {
+    let res = [];
+
+    for(let key in items) {
+        if(items[key].canBuy.includes(godClass)) {
+            let include = true;
+
+            if(args) {
+                for(let i = 0; i < args.length; i++)
+                    if(!godClass[key].effects.includes(args[i]))
+                        include = false;
+            }
+
+            if(include)
+                res.push(key);
+        }
     }
+
+    return res;
 }
 
-const selectRandomGod = (type:string) => {
-    let category;
+const verifyBuild = (build:string[], possibleItems:string[]) => {
+    let hasBoots = false;
 
-    if(type)
-        category = byCategory[type];
-    else
-        category = allGods;
+    for(let i = 0; i < build.length; i++) {
+        let isBoot = /Shoes+Boots+Tabi+Greaves/.test(build[i]);
 
-    return category[Math.floor(Math.random() * category.length)];
+        if(isBoot && hasBoots) {
+            while((/Shoes+Boots+Tabi+Greaves/.test(build[i])))
+                build[i] = obtainRandom(possibleItems);
+        }
+        
+        if(isBoot)
+            hasBoots = true;
+
+
+        for(let j = i + 1; j < build.length; j++) {
+            if(build[i] === build[j])
+                build[j] = obtainRandom(possibleItems);
+        }
+    }
+
+    return build;
 }
 
-module.exports = {
-    parseGodType: parseGodType,
-    selectRandomGod: selectRandomGod,
-    obtainGodClass: obtainGodClass,
-    parseArgument: parseArgument
-}
+export { obtainRandom, selectRandomGod, obtainGodClass, filterItems, verifyBuild };
+
+/*
+TODO:
+- Better verifyBuild function
+*/
