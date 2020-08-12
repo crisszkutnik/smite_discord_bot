@@ -13,12 +13,6 @@ let classRegExp = new RegExp("assasin|jungler|jungla|asesino|jg|guardian|support
 
 let buildParams = new RegExp("crit|power|lifesteal|attack_speed|penetration|pen|health|hp5|mp5|cdr|ccr");
 
-let class_str = "assasin|jungler|jungla|asesino|jg|guardian|support|sup|supp|mage|mid|mago|warrior|guerrero|solo|hunter|adc|carry|cazador";
-
-let build_str = "crit|power|lifesteal|attack_speed|penetration|pen|health|hp5|mp5|cdr|ccr";
-
-let rGodSyntax = new RegExp(`(${class_str})?(\sbuild(\sb)?(\s(${build_str}))*)?`, 'g');
-
 const parseGodType = (type:string) => {
     if(jungleRexExp.test(type))
         return "jungle";
@@ -32,4 +26,4 @@ const parseGodType = (type:string) => {
         return "adc";
 }
 
-export { rGodSyntax, classRegExp, buildParams, parseGodType };
+export { classRegExp, buildParams, parseGodType };

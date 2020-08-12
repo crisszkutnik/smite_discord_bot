@@ -87,8 +87,3 @@ class God {
 }
 
 export default God;
-
-/*
-TODO:
-- Add boots to items json
-*/

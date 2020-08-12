@@ -1,23 +1,6 @@
-import { classRegExp, buildParams, rGodSyntax, parseGodType } from '../bin/regExp'
+import { classRegExp, buildParams, parseGodType } from '../bin/regExp'
+import { parseBuildParams } from '../bin/func'
 import God from '../bin/godClass'
-
-const parseBuildParams = (args:string[], godType:string) => {
-    let res = [];
-
-    args.forEach(e => {
-        if(["penetration", "pen", "lifesteal", "power"].includes(e)) {
-            if(godType === 'mage' || godType === "guardian")
-                res.push("magical_" + e);
-            else
-                res.push("physical_" + e);
-        } else if(buildParams.test(e))
-            res.push(e);
-        else
-            return null;
-    });
-
-    return res;
-}
 
 const errorFound = (message) => {
     message.channel.send("Error encontrado. La sintaxis del comando es:\n``+rgod class? build? b? (build-params)?``");
@@ -71,14 +54,12 @@ const correctSyntax = (arg1:string, arg2:string, args:string[]) => {
             return isOk;
         }
     } else if(arg1 === "build") {
-        console.log(arg2);
 
         if(!arg2 && args.length === 0)
             return true;
         else if(arg2 !== "b" && !buildParams.test(arg2))
             return false;
         else if(arg2 === "b") {
-            console.log("aca");
             let i = 0, isOk = true;
 
             while(i < args.length && isOk) {
@@ -88,7 +69,7 @@ const correctSyntax = (arg1:string, arg2:string, args:string[]) => {
 
             return isOk;
         }
-    } else if(!arg1 && !arg2 && !args)
+    } else if(!arg1 && !arg2 && args.length === 0)
         return true;
 
 }
@@ -119,8 +100,3 @@ module.exports = {
         }
     }
 };
-
-/*
-TODO:
-- Syntax checker does not work
-*/

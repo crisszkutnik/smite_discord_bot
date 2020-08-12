@@ -1,3 +1,4 @@
+import  { buildParams } from './regExp'
 import { items } from '../items.json'
 import { allGods, byCategory } from '../gods.json'
 
@@ -71,9 +72,22 @@ const verifyBuild = (build:string[], possibleItems:string[]) => {
     return build;
 }
 
-export { obtainRandom, selectRandomGod, obtainGodClass, filterItems, verifyBuild };
+const parseBuildParams = (args:string[], godType:string) => {
+    let res = [];
 
-/*
-TODO:
-- Better verifyBuild function
-*/
+    args.forEach(e => {
+        if(["penetration", "pen", "lifesteal", "power"].includes(e)) {
+            if(godType === 'mage' || godType === "guardian")
+                res.push("magical_" + e);
+            else
+                res.push("physical_" + e);
+        } else if(buildParams.test(e))
+            res.push(e);
+        else
+            return null;
+    });
+
+    return res;
+}
+
+export { obtainRandom, selectRandomGod, obtainGodClass, filterItems, verifyBuild, parseBuildParams };
