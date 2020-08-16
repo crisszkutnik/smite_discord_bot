@@ -2,7 +2,7 @@ import  { buildParams } from './regExp'
 import { items } from '../items.json'
 import { allGods, byCategory } from '../gods.json'
 
-const obtainRandom = (arr:any[]) => {
+const obtainRandom = (arr:any[]):string => {
     return arr[Math.floor(Math.random() * arr.length)];
 }
 
@@ -64,7 +64,8 @@ const verifyBuild = (build:string[], possibleItems:string[]) => {
             hasBoots = true;
 
         if(items[build[i]])
-            build[i] = obtainRandom(possibleItems);
+            while(items[build[i]])
+                build[i] = obtainRandom(possibleItems);
         else
             items[build[i]] = true;
     }

@@ -73,8 +73,8 @@ class God {
 
         for(let i = 0; i < 6; i++)
             this.build.push(obtainRandom(possibleItems));
-
-        verifyBuild(this.build, possibleItems);
+        
+        this.build = verifyBuild(this.build, possibleItems);
     }
 
     sendBuild(message) {
