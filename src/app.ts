@@ -23,19 +23,23 @@ client.on('message', message => {
 
     let parsedMessage = message.content.toLowerCase().trim();
 
-    if(message.content.toLowerCase().trim() === "warchi que juego?")
-        message.content = "+rgod";
+    if(parsedMessage === "warchi que juego?")
+        parsedMessage = "+rgod";
+    else if(parsedMessage === "dou" && !message.author.bot)
+        message.channel.send("dou");
 
-    if(!message.content.startsWith(prefix) || message.author.bot) return;
+    if(!parsedMessage.startsWith(prefix) || message.author.bot) return;
 
     let command, args;
 
     [command, ...args] = parsedMessage.slice(prefix.length).split(" ");
 
-    if(command === "warchi que juego" || command === "rgod")
+    if(command === "rgod")
         client.commands.get("randomGod").execute(message, args);
     else if(command === "rbuild")
         client.commands.get("randomBuild").execute(message, args);
+    else if(command === "rteam")
+        client.commands.get("randomTeam").execute(message, args);
 });
 
 

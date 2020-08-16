@@ -26,7 +26,7 @@ const correctSyntax = (boots:string, args:string[]):Boolean => {
 module.exports = {
     name: "randomBuild",
     execute(message, [godName, bootFlag, ...args]:[string, string, string]) {
-        
+
         try {
             godName = godName.charAt(0).toUpperCase() + godName.slice(1); // Need to do this, otherwise it would not work
         } catch {
