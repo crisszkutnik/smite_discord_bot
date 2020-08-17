@@ -9,9 +9,12 @@ const errorFound = (message) => {
 const checkSyntax = (num_str, number, all, classes):Boolean => {
     if(!number) {
         if(num_str) {
-            if(num_str === "all")
-                all = "all";
-            else if(classRegExp.test(num_str))
+            if(num_str === "all") {
+                if(classRegExp.test(all))
+                    classes.push(all);
+                else
+                    return false;
+            } else if(classRegExp.test(num_str))
                 classes.push(num_str);
             else
                 return false;
@@ -21,10 +24,6 @@ const checkSyntax = (num_str, number, all, classes):Boolean => {
         if(number < 2 || number > 5)
             return false;
 
-        /*if(all !== "all" && classRegExp.test(all))
-            classes.push(all);
-        else
-            return false;*/
         if(all && all !== "all") {
             if(classRegExp.test(all))
                 classes.push(all);
@@ -36,6 +35,9 @@ const checkSyntax = (num_str, number, all, classes):Boolean => {
     for(let i = 0; i < classes.length; i++)
         if(!classRegExp.test(classes[i]))
             return false;
+
+    if(classes.length > 5)
+        return false;
 
     return true;
 }
@@ -50,7 +52,10 @@ module.exports = {
             return;
         }
 
-        let gods = [];
+        /*
+            If any class has to be added to the array it is done on the checkSyntax
+            function, as JS arrays are passed by reference and not by value
+        */
 
         if(!number) {
             number = 5;
@@ -58,18 +63,42 @@ module.exports = {
             if(!num_str)
                 classes = ["guardian", "jg", "mid", "warrior", "adc"];
             else if(num_str === "all")
-                classes.push(all);
-            else {
-                classes.push(num_str);
+                all = "all";
+        }
 
-                if(all)
-                    classes.push(all);
+        let gods = [];
+
+        for(let i = 0; i < classes.length; i++)
+            classes[i] = parseGodType(classes[i]);
+
+        if(all === "all") {
+            for(let i = 0; i < number; i++) {
+                let god = new God(obtainRandom(classes), "godType").godName;
+
+                while(gods.includes(god))
+                    god = new God(obtainRandom(classes), "godType").godName;
+
+                gods.push(god);
             }
-        } else
-            if(all)
-                classes.push(all);
+        } else {
+            for(let i = 0; i < classes.length; i++) {
+                let god = new God(classes[i], "godType").godName;
 
+                while(gods.includes(god))
+                    god = new God(classes[i], "godType").godName;
+                
+                gods.push(god);
+            }
 
+            for(let i = 0; i < number - classes.length; i++) {
+                let god = new God().godName;
+
+                while(gods.includes(god))
+                    god = new God().godName;
+                
+                gods.push(god);
+            }
+        }
 
         let god_str = '';
 
