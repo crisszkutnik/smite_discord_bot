@@ -91,12 +91,9 @@ module.exports = {
 
         args = parseBuildParams(args, god.godClass);
 
-        message.channel.send(god.godName);
-
-        if(includeBuild) {
+        if(includeBuild)
             god.generateRandomBuild(includeBoots, args);
 
-            god.sendBuild(message);
-        }
+        message.channel.send(god.sendMessage(includeBuild));  
     }
 };

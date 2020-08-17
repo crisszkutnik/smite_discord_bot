@@ -1,6 +1,7 @@
 import { selectRandomGod, obtainRandom, obtainGodClass, filterItems, verifyBuild } from './func'
 import { acorns, physical_boots, magical_boots } from '../other_items.json'
 import { items } from '../items.json'
+const Discord = require("discord.js");
 
 class God {
     godName:string;
@@ -78,11 +79,38 @@ class God {
     }
 
     sendBuild(message) {
-        let str = '';
+        /*let str = '';
 
         this.build.forEach(e => str += e + '\n');
 
-        message.channel.send(str);
+        message.channel.send(str);*/
+    }
+
+    sendMessage(includeBuild?:Boolean) {
+        return new Discord.MessageEmbed()
+            .setColor("#d9830b")
+            //.setImage(`https://web2.hirez.com/smite/god-cards/${this.godName}.jpg`)
+            //.setThumbnail('https://i.imgur.com/wSTFkRM.png')
+            .setThumbnail(`https://www.smitefire.com/images/god/icon/${this.godName.toLowerCase().split(" ").join("-")}.png`)
+            .setTitle(this.godName);
+
+        /*return new Discord.MessageEmbed()
+            .setColor('#0099ff')
+            //.setTitle('Some title')
+            //.setURL('https://discord.js.org/')
+            //.setAuthor('Some name', 'https://i.imgur.com/wSTFkRM.png', 'https://discord.js.org')
+            .setDescription('Some description here')
+            .setThumbnail('https://i.imgur.com/wSTFkRM.png')
+            /*.addFields(
+                { name: 'Regular field title', value: 'Some value here' },
+                { name: '\u200B', value: '\u200B' },
+                { name: 'Inline field title', value: 'Some value here', inline: true },
+                { name: 'Inline field title', value: 'Some value here', inline: true },
+            )*/
+            //.addField('Inline field title', 'Some value here', true)
+            //.setImage('https://i.imgur.com/wSTFkRM.png')
+            //.setTimestamp()
+            //.setFooter('Some footer text here', 'https://i.imgur.com/wSTFkRM.png');*/
     }
 }
 
